@@ -20,6 +20,7 @@ public class JTabbedPaneDemo {
 		jf.getContentPane().add(p);
 		jf.setSize(400, 500);
 		jf.setVisible(true);
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 	public static void main(String[] args) {

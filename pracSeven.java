@@ -67,7 +67,7 @@ public class pracSeven implements ItemListener{
 		cb.addItem("baller");
 		cb.addItem("ballin");
 		cb.addItem("balled");
-		im = new ImageIcon("C:\\Users\\XKC21\\Downloads\\baller.jpg");
+		im = new ImageIcon("C:\\Users\\joshu\\OneDrive\\Pictures\\Screenshots\\xbox.jpg");
 		cb.addItemListener(this);
 		jl = new JLabel();
 		jl.setIcon(im);
@@ -79,7 +79,7 @@ public class pracSeven implements ItemListener{
 		jf.add(jp);
 		jf.setVisible(true);
 		jf.setSize(900, 900);
-		jf.pack();
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	
 	}
 	
@@ -92,7 +92,7 @@ public class pracSeven implements ItemListener{
 	public void itemStateChanged(ItemEvent e) {
 		// TODO Auto-generated method stub
 		String element= e.getItem().toString();
-		im  = new ImageIcon("C:\\Users\\XKC21\\Downloads\\"+element+".jpg");
+		im  = new ImageIcon("C:\\Users\\joshu\\OneDrive\\Pictures\\Screenshots\\"+element+".jpg");
 		jl.setIcon(im);
 	}
 

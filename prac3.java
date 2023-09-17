@@ -47,7 +47,7 @@ public class prac3 implements  TreeSelectionListener{
 		f.setSize(200, 300);
 		f.setVisible(true);
 		
-
+		f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 	}
 	
 
