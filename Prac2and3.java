@@ -1,38 +1,74 @@
+	//Write a method called display which shows only the center word from a sentence
+public class Prac2and3 {
+    public static void main(String[] args) {
+        String s = "We are learning about strings";
 
-//Q1 convert alternating words to uppercase:
+        Prac2and3 t = new Prac2and3();
+        System.out.println(s);
+        String wordToDelete = "learning"; // Specify the word to delete
+        t.alternateRevers(s);
+    }
 
+    void deleteWord(String s, String wordToDelete) {
+        String[] sarr = s.split("\\s+");
+        StringBuilder newString = new StringBuilder();
 
+        for (int i = 0; i < sarr.length; i++) {
+            if (!sarr[i].equals(wordToDelete)) {
+                newString.append(sarr[i]).append(" ");
+            }
+        }
+        
+        System.out.println(newString.toString().trim());
+    }
 
-public class prac2 {
-	
-	public static void main(String[] args) {
-	String s = "We are learning about strings";
-	
-	prac2 m = new prac2();
-	
-	m.alternate(s);
-}
-
-
-void alternate(String s) {
-	String newString = "";
-	
-	String[] sarr = s.split("\\s+");
-	
-	for(int i = 0; i<sarr.length; i++) {
-		if(i%2 == 0) {
-			newString = newString + sarr[i].toUpperCase()+ " ";
-		}
-		else {
-			newString = newString + sarr[i] + " ";
+	void alternateRevers(String s) {
+		String newString = "";
+		
+		String[] sarr = s.split("\\s+");
+		
+		for(int i = 0; i<sarr.length; i++) {
+			if(i%2 == 0) {
+				StringBuffer sb = new StringBuffer(sarr[i]);
+				newString = newString + sb.reverse() + " ";
+				
+			}
+			else {
+				newString = newString + sarr[i] + " ";
+			}
+			
 		}
 		
-	}
-	
-	System.out.println(newString);
+		System.out.println(newString);
 }
 }
 
+
+
+/* 
+//Q1 convert alternating words to uppercase:
+public class Prac2and3{
+    public static void main(String[] args){
+        String s = "We are learning about strings";
+
+        Prac2and3 t = new Prac2and3();
+        System.out.println(s);
+        t.alternate(s);
+
+    }
+    void alternate(String s){
+        String newString = "";
+        String[] sarr = s.split("\\s+");
+        for(int i = 0; i<sarr.length; i++){
+            if (i%2==0){                newString= newString+ sarr[i].toUpperCase()+ " ";
+            }
+            else{
+                newString = newString+ sarr[i]+" ";
+            }
+        }
+        System.out.println(newString);
+    }
+}
 
 
 
@@ -148,3 +184,4 @@ public class Student {
 }
 }
 
+*/

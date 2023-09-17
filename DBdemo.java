@@ -1,5 +1,5 @@
-Java Data base Prac:
-
+//Java Data base Prac:
+/* 
 import java.sql.*;
 
 public class DBdemo {
@@ -33,7 +33,7 @@ public class DBdemo {
 
 
 
-
+*/
 //proper final code
 
 import java.sql.*;

@@ -1,5 +1,3 @@
-//How to use array list for a student database
-
 
 
 import java.util.ArrayList;
@@ -47,11 +45,11 @@ class Student{
 
 public class prac1{
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub;\
+		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Student> ar = new ArrayList<Student>();
 		
-		for(int i= 0; i<6; i++) {
+		for(int i= 0; i<21; i++) {
 			
 			
 			System.out.println(" record no: " + (i+1));
@@ -70,7 +68,7 @@ public class prac1{
 			
 			Student st = new Student(r, n , c, a);
 			ar.add(st);
-			
+		
 		}
 		
 		System.out.println("Enter the roll no to search");
